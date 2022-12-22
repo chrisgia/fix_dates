@@ -1,5 +1,5 @@
 # -- images --
-$images=Get-ChildItem * -Include *.jpg,*png -LiteralPath ".\"
+$images=Get-ChildItem -Filter "*.jpg" -LiteralPath ".\"
 
 foreach ($imageFile in $images){
     $imagePath = $imageFile.FullName
